@@ -26,7 +26,7 @@ move_file = os.listdir(PATH)
 
 for mv in move_file:
     # filetypes
-    if mv.endswith(('.png', '.jpg', '.jpeg', 'gif')):
+    if mv.endswith(('.png', '.jpg', '.jpeg', '.gif')):
         shutil.move(mv, images)
     if mv.endswith(('.mp3', '.wav', '.mid')):
         shutil.move(mv, audio)
@@ -39,14 +39,14 @@ for mv in move_file:
     if mv.endswith(('.zip', '.rar', '.tar', '.7z')):
         shutil.move(mv, compressed_files)
 
-    print("Organizing files!")
+print("Organizing files!")
 
-    # Animation
-    time.sleep(2)
-    print(".")
-    time.sleep(2)
-    print(".")
-    time.sleep(2)
-    print(".")
-    time.sleep(2)
-    print("Finished moving files!")
+# Animation
+time.sleep(2)
+print(".")
+time.sleep(2)
+print(".")
+time.sleep(2)
+print(".")
+time.sleep(2)
+print("Finished moving files!")
