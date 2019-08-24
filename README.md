@@ -1,8 +1,14 @@
 # Automation
 
+[![Python Version](https://img.shields.io/badge/python-3.6.1-brightgreen.svg?)](https://www.python.org/downloads/)
+
 Collection of my automated tasks written in Python.
 
-> Using python `3.6.1`
+Install requirements:
+
+```sh
+pip install -r requirements.txt
+```
 
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organize files (images, audio, texts, videos and compressed files).
