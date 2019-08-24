@@ -32,13 +32,10 @@ with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
     message['subject'] = 'Test email'
     message.set_content('Testing')
 
-    """
-    Sending an image:
-    with open('image.png', 'rb') as image_attachment:
+    with open('image/file', 'rb') as image_attachment:
         img = image_attachment.read()
         img_type = imghdr.what(image_attachment.name)
     message.add_attachment(img, maintype='image', subtype=img_type)
-    """
 
     send__mail.send_message(message)
 
