@@ -1,1 +1,2 @@
 PyAutoGUI==0.9.47
+selenium==3.141.0
