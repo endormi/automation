@@ -7,6 +7,7 @@ Automated private repository creation and github desktop URL clone
 """
 
 from selenium import webdriver
+import pyautogui
 import time
 
 
@@ -54,3 +55,12 @@ clone = browser.find_element_by_class_name('get-repo-select-menu')
 clone.click()
 github_desktop = browser.find_element_by_class_name('js-get-repo')
 github_desktop.click()
+time.sleep(1)
+
+"""
+Depends on your computer, check where is your github desktop click point using
+print(pyautogui.position())
+"""
+pyautogui.click(x=552, y=193)
+time.sleep(3)
+pyautogui.click(x=802, y=770)
