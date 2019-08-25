@@ -18,15 +18,15 @@ https://www.seleniumhq.org/download/
 browser = webdriver.Chrome(r'file/to/chromedriver/if/needed')
 browser.get('https://github.com/login')
 
-username_key = ''
-password_key = ''
+user = ''
+pw = ''
 repo = ''
 desc = ''
 
 username = browser.find_element_by_id('login_field')
-username.send_keys(username_key)
+username.send_keys(user)
 password = browser.find_element_by_id('password')
-password.send_keys(password_key)
+password.send_keys(pw)
 log_in = browser.find_element_by_class_name('btn-block')
 log_in.click()
 new_repo = browser.find_element_by_link_text('New')
