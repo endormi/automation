@@ -20,7 +20,7 @@ browser.get('https://twitter.com/login')
 
 username = ''
 password = ''
-content = ''
+tweet = ''
 
 user = browser.find_element_by_class_name('js-username-field')
 user.send_keys(username)
@@ -29,11 +29,11 @@ pw.send_keys(password)
 log_in = browser.find_element_by_class_name('EdgeButtom--medium')
 log_in.click()
 time.sleep(1)
-tweet = browser.find_element_by_class_name('r-e7q0ms')
-tweet.click()
+start_tweeting = browser.find_element_by_class_name('r-e7q0ms')
+start_tweeting.click()
 time.sleep(1)
 tweet_content = browser.find_element_by_class_name('notranslate')
-tweet_content.send_keys(content)
+tweet_content.send_keys(tweet)
 time.sleep(1)
 tweet_button = browser.find_element_by_class_name('r-1n0xq6e')
 tweet_button.click()
