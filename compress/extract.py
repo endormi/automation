@@ -3,6 +3,7 @@
 author: @endormi
 
 Minimal automation extracting .zip files
+**NOTE: This should work with .7z files**
 
 """
 

@@ -3,6 +3,7 @@
 author: @endormi
 
 Minimal automation compressing folders
+**NOTE: This should work with .7z files**
 
 """
 
