@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.6.1-brightgreen.svg?)](https://www.python.org/downloads/)
 
-Collection of my automated tasks written in Python.
+Collection of my automated tasks.
 
 Install requirements:
 
@@ -16,6 +16,7 @@ pip install -r requirements.txt
   - [Private](https://github.com/endormi/automation/blob/master/repo/priv.py)
   - [Public](https://github.com/endormi/automation/blob/master/repo/publ.py)
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/send-mail.py) - Send email with image attachments.
+- [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Automated tweeter.
 - [Zip](https://github.com/endormi/automation/blob/master/zip) - Compressing and extracting `.zip` files.
   - [Extracting](https://github.com/endormi/automation/blob/master/zip/extract.py)
   - [Compressing folders](https://github.com/endormi/automation/blob/master/zip/zip_folder.py)
