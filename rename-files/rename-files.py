@@ -3,7 +3,7 @@
 author: @endormi
 
 Automated file renaming
-Currently works with title and num, but change it to your own preference
+Currently works with title and num, but change it to match your file format
 
 """
 
@@ -24,6 +24,7 @@ for files in os.listdir():
     """
     title, num = file.split('-')
     # print(file.split('-'))
+    # to check the file split
 
     title = title.strip()
     num = num.strip()[0:].zfill(3)
