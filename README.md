@@ -16,7 +16,6 @@ pip install -r requirements.txt
 - [Repo](https://github.com/endormi/automation/blob/master/repo) - Create a repository and clone URL to GitHub desktop.
   - [Private](https://github.com/endormi/automation/blob/master/repo/priv.py)
   - [Public](https://github.com/endormi/automation/blob/master/repo/publ.py)
-- [Send-email](https://github.com/endormi/automation/blob/master/send-email/send-mail.py) - Send email with image attachments.
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Automated tweeter.
 
 ## License
