@@ -55,10 +55,7 @@ github_desktop = browser.find_element_by_class_name('js-get-repo')
 github_desktop.click()
 time.sleep(1)
 
-"""
-Depends on your computer, check where your github desktop is by click point using
-print(pyautogui.position())
-"""
+# Checking cursor position: print(pyautogui.position())
 pyautogui.click(552, 193)
 time.sleep(3)
 pyautogui.click(802, 770)

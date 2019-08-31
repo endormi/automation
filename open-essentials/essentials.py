@@ -11,12 +11,11 @@ import pyautogui
 import webbrowser
 import time
 
-# Use this to  print(pyautogui.position())
-
 webbrowser.open('chrome')
 # webbrowser.open('mozilla')
 # webbrowser.open('safari')
 
+# Checking cursor position: print(pyautogui.position())
 pyautogui.moveTo(414, 51, duration=1)
 pyautogui.click(414, 51)
 pyautogui.typewrite("github.com")
@@ -33,7 +32,6 @@ pyautogui.click(414, 51)
 
 """
 My spotify, powershell and vscode (vscode is last because of the hotkey's) are on these positions
-Checking cursor position: print(pyautogui.position())
 """
 
 pyautogui.click(271, 1067)
