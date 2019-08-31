@@ -58,9 +58,9 @@ github_desktop.click()
 time.sleep(1)
 
 """
-Depends on your computer, check where is your github desktop click point using
+Depends on your computer, check where your github desktop is by click point using
 print(pyautogui.position())
 """
-pyautogui.click(x=552, y=193)
+pyautogui.click(552, 193)
 time.sleep(3)
-pyautogui.click(x=802, y=770)
+pyautogui.click(802, 770)
