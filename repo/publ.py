@@ -16,7 +16,7 @@ Install browser driver:
 https://www.seleniumhq.org/download/
 """
 
-browser = webdriver.Chrome(r'file/to/chromedriver/if/needed')
+browser = webdriver.Chrome(r'file/to/chromedriver/if/needed/otherwise/remove/r')
 browser.get('https://github.com/login')
 
 user = ''

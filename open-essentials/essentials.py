@@ -31,7 +31,7 @@ pyautogui.typewrite(["enter"])
 pyautogui.click(414, 51)
 
 """
-My spotify, powershell and vscode (vscode is last because of the hotkey's) are on these positions
+Opens spotify, powershell and vscode on my computer
 """
 
 pyautogui.click(271, 1067)
