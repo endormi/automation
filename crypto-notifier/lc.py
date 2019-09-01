@@ -74,7 +74,7 @@ def main():
         # Reset lc
         lc = []
 
-        time.sleep(1000)
+        time.sleep(500)
 
 
 if __name__ == '__main__':
