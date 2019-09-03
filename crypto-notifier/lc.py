@@ -69,7 +69,7 @@ def main():
         it sends a notification
         """
         if len(lc) == 3:
-            ifttt_hook('lc_price', format_lc(lc))
+            ifttt_hook('applet_name', format_lc(lc))
 
         # Reset lc
         lc = []
