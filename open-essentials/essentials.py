@@ -12,8 +12,10 @@ import webbrowser
 import time
 
 webbrowser.open('chrome')
-# webbrowser.open('mozilla')
-# webbrowser.open('safari')
+"""
+webbrowser.open('mozilla')
+webbrowser.open('safari')
+"""
 
 # Checking cursor position: print(pyautogui.position())
 pyautogui.moveTo(414, 51, duration=1)
@@ -41,7 +43,7 @@ pyautogui.click(523, 1072)
 
 # ** If your computer is not that fast, add more time to (time.sleep) **
 
-time.sleep(2)
+time.sleep(1)
 pyautogui.hotkey("ctrl", "shift", "n")
-time.sleep(2)
+time.sleep(1)
 pyautogui.hotkey("ctrl", "o")
