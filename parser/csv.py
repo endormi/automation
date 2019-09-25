@@ -1,7 +1,8 @@
 """
 
 author: @endormi
-Automated boring csv parser with tab delimiter
+
+Automated boring csv parser with a tab delimiter
 
 """
 

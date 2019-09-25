@@ -1,8 +1,8 @@
 """
 
 author: @endormi
-Sending an email.
-Subject, content and image attachments.
+
+Subject, content and image attachments
 
 """
 
