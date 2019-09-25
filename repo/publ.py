@@ -2,7 +2,7 @@
 
 author: @endormi
 
-Automated public repository creation and github desktop URL clone
+Automated public repository creation
 
 """
 
