@@ -2,7 +2,8 @@
 
 author: @endormi
 
-Subject, content and image attachments
+Automated email sender (uses gmail's port)
+subject, content and image attachments
 
 """
 
