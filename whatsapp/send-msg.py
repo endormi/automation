@@ -15,16 +15,12 @@ browser.get('https://web.whatsapp.com')
 
 name = ''
 message = ''
-amount_of_times = int('')
 
 time.sleep(1)
 
 user = browser.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 send_msg = browser.find_element_by_class_name('_13mgZ')
-
-
-for x in range(amount_of_times):
-    send_msg.send_keys(message)
-    btn = browser.find_element_by_class_name('_3M-N-')
-    btn.click()
+send_msg.send_keys(message)
+btn = browser.find_element_by_class_name('_3M-N-')
+btn.click()
