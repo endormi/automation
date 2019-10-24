@@ -1,6 +1,6 @@
 # Automation [![Python Version](https://img.shields.io/badge/python-3.6.1-brightgreen.svg?)](https://www.python.org/downloads/)
 
-Collection of my automated tasks.
+Collection of my automated things.
 
 Install requirements:
 
