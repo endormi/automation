@@ -18,7 +18,7 @@ pip install -r requirements.txt
   - [Public](https://github.com/endormi/automation/blob/master/repo/publ.py)
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write tweets.
-- [Whatsapp](https://github.com/endormi/automation/blob/master/whatsapp/send-msg.py) - Send Whatsapp message.
+- [Whatsapp](https://github.com/endormi/automation/tree/master/whatsapp) - Send Whatsapp messages.
 
 ## License
 
