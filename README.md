@@ -13,9 +13,7 @@ pip install -r requirements.txt
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organize files (images, audio, texts, videos and compressed files).
 - [Rename-files](https://github.com/endormi/automation/blob/master/rename-files/rename-files.py) - Rename files.
-- [Repo](https://github.com/endormi/automation/blob/master/repo) - Create a private or public GitHub repository.
-  - [Private](https://github.com/endormi/automation/blob/master/repo/priv.py)
-  - [Public](https://github.com/endormi/automation/blob/master/repo/publ.py)
+- [Repo](https://github.com/endormi/automation/tree/master/repo) - Create a private or public GitHub repository.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write tweets.
 - [Whatsapp](https://github.com/endormi/automation/tree/master/whatsapp) - Send Whatsapp messages.
