@@ -20,22 +20,24 @@ try:
     if req.status_code == 200:
         print('Success!')
 
-except requests.exceptions.HTTPError as err:
-    print("HTTP Error:", err)
+except requests.exceptions.HTTPError as http_err:
+    print("HTTP Error: ", http_err)
     playsound('volume_warning.wav')
 
-except requests.exceptions.ConnectionError as err:
-    print("Error Connecting:", err)
+except requests.exceptions.ConnectionError as  connect_err:
+    print("Error Connecting: ", connect_err)
     playsound('volume_warning.wav')
 
-except requests.exceptions.Timeout as err:
-    print("Timeout Error:", err)
+except requests.exceptions.Timeout as time_err:
+    print("Timeout Error: ", time_err)
     playsound('volume_warning.wav')
 
 except requests.exceptions.TooManyRedirects as err:
-    print("Too many redirects:", err)
+    print("Too many redirects: ", err)
     playsound('volume_warning.wav')
 
-except requests.exceptions.RequestException as err:
-    print(err)
+except requests.exceptions.RequestException as request_err:
+    print("General error: ", request_err)
     playsound('volume_warning.wav')
+except KeyboardInterrupt:
+    print("Someone closed the program")
