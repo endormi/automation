@@ -24,7 +24,7 @@ except requests.exceptions.HTTPError as http_err:
     print("HTTP Error: ", http_err)
     playsound('volume_warning.wav')
 
-except requests.exceptions.ConnectionError as  connect_err:
+except requests.exceptions.ConnectionError as connect_err:
     print("Error Connecting: ", connect_err)
     playsound('volume_warning.wav')
 
