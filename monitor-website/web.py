@@ -3,41 +3,42 @@
 author: @endormi
 
 Automated website monitoring for exceptions
-if there is an exception it plays a sound (remember to turn down your volume)
+if there is an exception it sends an email and plays a sound (remember to turn down your volume)
 
 """
 
 import requests
 from playsound import playsound
+import smtplib
 
 
 url = ''
+PORT = 587
+Your_Email = 'example@company.com'
 
-try:
-    req = requests.get(url, timeout=1)
-    req.raise_for_status()
+"""
+Get your password from:
+https://myaccount.google.com/apppasswords
+"""
+Your_Password = 'password'
 
-    if req.status_code == 200:
-        print('Success!')
 
-except requests.exceptions.HTTPError as http_err:
-    print("HTTP Error: ", http_err)
+req = requests.get(url, timeout=1)
+req.raise_for_status()
+
+if req.status_code != 200:
+    with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
+        send__mail.starttls()
+
+        send__mail.login(Your_Email, Your_Password)
+
+        sub = 'Your site is down!'
+        body = 'Restart the server and make sure it is running.'
+        message = f'Subject: {sub} \n\n {body}'
+
+        send__mail.sendmail(Your_Email, Your_Email, message)
+        print("Email sent!")
+
     playsound('volume_warning.wav')
-
-except requests.exceptions.ConnectionError as connect_err:
-    print("Error Connecting: ", connect_err)
-    playsound('volume_warning.wav')
-
-except requests.exceptions.Timeout as time_err:
-    print("Timeout Error: ", time_err)
-    playsound('volume_warning.wav')
-
-except requests.exceptions.TooManyRedirects as err:
-    print("Too many redirects: ", err)
-    playsound('volume_warning.wav')
-
-except requests.exceptions.RequestException as request_err:
-    print("General error: ", request_err)
-    playsound('volume_warning.wav')
-except KeyboardInterrupt:
-    print("Someone closed the program")
+else:
+    print("Works correctly")
