@@ -14,6 +14,7 @@ pip install -r requirements.txt
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organize files (images, audio, texts, videos and compressed files).
 - [Rename-files](https://github.com/endormi/automation/blob/master/rename-files/rename-files.py) - Rename and format files.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Create a private or public GitHub repository.
+- [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write tweets.
 - [Whatsapp](https://github.com/endormi/automation/tree/master/whatsapp) - Send Whatsapp messages.
