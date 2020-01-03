@@ -15,7 +15,7 @@ Install browser driver:
 https://www.seleniumhq.org/download/
 """
 
-browser = webdriver.Chrome(r'file/to/chromedriver/if/needed')
+browser = webdriver.Chrome(r'file/to/driver/if/needed')
 browser.get('https://twitter.com/login')
 
 username = ''

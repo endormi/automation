@@ -36,6 +36,7 @@ def test_browsers(wd):
             browser.maximize_window()
 
             return browser
+        
         elif wd == "Ie":
             browser = webdriver.Ie()
             browser.maximize_window()
