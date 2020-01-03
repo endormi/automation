@@ -1,8 +1,16 @@
 __pycache__/
+*.pyc
 *.py[cod]
 *$py.class
-env/
 *.log
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.cache
 
 # To ignore selenium-testing testresults:
 *.html
