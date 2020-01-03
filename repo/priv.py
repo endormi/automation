@@ -12,10 +12,10 @@ import time
 
 """
 Install browser driver:
-https://www.seleniumhq.org/download/
+https://selenium.dev/downloads/
 """
 
-browser = webdriver.Chrome(r'file/to/chromedriver/if/needed/otherwise/remove/r')
+browser = webdriver.Chrome(r'file/to/driver/if/needed/otherwise/remove/r')
 browser.get('https://github.com/login')
 browser.maximize_window()
 

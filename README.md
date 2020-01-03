@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 - [Crypto-notifier](https://github.com/endormi/automation/blob/master/crypto-notifier/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
-- [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - Check if the website is up-and-running and if not it sends an email and plays a sound.
+- [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organize files (images, audio, texts, videos and compressed files).
 - [Rename-files](https://github.com/endormi/automation/blob/master/rename-files/rename-files.py) - Rename and format files.

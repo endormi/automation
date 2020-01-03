@@ -14,7 +14,7 @@ import time
 
 """
 Install browser driver:
-https://www.seleniumhq.org/download/
+https://selenium.dev/downloads/
 """
 
 
@@ -22,7 +22,7 @@ class login_form_test(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.browser = webdriver.Chrome(r'file/to/chromedriver/if/needed/otherwise/remove/r')
+        cls.browser = webdriver.Chrome(r'file/to/driver/if/needed/otherwise/remove/r')
         cls.browser.maximize_window()
 
     def test_login_github(self):

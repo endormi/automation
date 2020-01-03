@@ -16,7 +16,7 @@ import HtmlTestRunner
 
 """
 Install browser driver:
-https://www.seleniumhq.org/download/
+https://selenium.dev/downloads/
 """
 
 
@@ -24,7 +24,7 @@ class ChromeSearch(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.browser = webdriver.Chrome(r'file/to/chromedriver/if/needed/otherwise/remove/r')
+        cls.browser = webdriver.Chrome(r'file/to/driver/if/needed/otherwise/remove/r')
         cls.browser.maximize_window()
 
     def test_search_github(self):
@@ -38,7 +38,15 @@ class ChromeSearch(unittest.TestCase):
     def test_search_so(self):
         self.browser.get("https://stackoverflow.com/")
         time.sleep(1)
-        self.browser.find_element_by_class_name('js-search-field ').send_keys('Python')
+        self.browser.find_element_by_class_name('js-search-field').send_keys('Python')
+        pyautogui.typewrite(["enter"])
+        time.sleep(1)
+        print(self.browser.current_url)
+
+    def test_search_amazon(self):
+        self.browser.get("https://amazon.com/")
+        time.sleep(1)
+        self.browser.find_element_by_id('twotabsearchtextbox').send_keys('Python')
         pyautogui.typewrite(["enter"])
         time.sleep(1)
         print(self.browser.current_url)

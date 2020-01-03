@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 env/
+*.log
 
 # To ignore selenium-testing testresults:
 *.html
