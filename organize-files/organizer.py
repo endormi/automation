@@ -3,7 +3,7 @@
 author: @endormi
 
 Automated organizer for images, audio, texts, videos and compressed files
-and moves them inside folders e.g. images
+and moves them inside specified folders
 
 """
 
