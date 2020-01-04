@@ -12,7 +12,7 @@ pip install -r requirements.txt
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organize files (images, audio, texts, videos and compressed files).
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Create a private or public GitHub repository.
-- [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow.
+- [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 
 ## License
 
