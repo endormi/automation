@@ -3,7 +3,7 @@
 author: @endormi
 
 Automated Git commands
-Use git through an intuitive CLI
+Automate the process of using commands such as clone, commit, branch, pull, merge, blame and stash
 
 """
 
@@ -47,7 +47,7 @@ def branch():
 
     run("checkout", "-b", br)
 
-    choice = input("\nDo you want to push the branch right now to GitHub? (y/n) ")
+    choice = input("\nDo you want to push the branch right now to GitHub? (y/n): ")
     choice = choice.lower()
 
     if choice == "y":
@@ -64,7 +64,7 @@ def pull():
 
     print("\nPulls changes from the current folder if *.git is initialized.")
 
-    choice = input("\nDo you want to pull the changes from GitHub? (y/n) ")
+    choice = input("\nDo you want to pull the changes from GitHub? (y/n): ")
     choice = choice.lower()
 
     if choice == "y":
@@ -101,7 +101,7 @@ def stash():
 
     print("\nCommands to use: " + cmd)
 
-    choice = input("\nType in the command you want to use: \n")
+    choice = input("\nType in the command you want to use: ")
     choice = choice.lower()
 
     if choice == "save":
