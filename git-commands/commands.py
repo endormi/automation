@@ -17,7 +17,7 @@ def run(*args):
 
 def clone():
 
-    print("\nFirst will be user and then repository name\n")
+    print("\nYou will be asked for the user first and then the repository name\n")
 
     user = input("User: ")
     __user__ = f'{user}'
@@ -47,7 +47,7 @@ def branch():
 
     run("checkout", "-b", br)
 
-    choice = input("\nDo you want to push the branch right now to GitHub? (y/n): ")
+    choice = input("\nDo you want to push the branch right now to GitHub? (y/n) ")
     choice = choice.lower()
 
     if choice == "y":
@@ -64,7 +64,7 @@ def pull():
 
     print("\nPulls changes from the current folder if *.git is initialized.")
 
-    choice = input("\nDo you want to pull the changes from GitHub? (y/n): ")
+    choice = input("\nDo you want to pull the changes from GitHub? (y/n) ")
     choice = choice.lower()
 
     if choice == "y":
@@ -88,9 +88,9 @@ def merge():
 def blame():
 
     file = input("\nType in the name of the file: ")
-    f = f'{file}'
+    fi = f'{file}'
 
-    run("blame", f)
+    run("blame", fi)
 
 
 def stash():
