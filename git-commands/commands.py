@@ -97,7 +97,11 @@ def stash():
 
     print("\nDo you want to save, list, pop, show, branch, clear or drop? ")
 
-    choice = input("\nCommands to use: save, li, pop, show, branch, clear and drop \n")
+    cmd = 'save, li, pop, show, branch, clear and drop'
+
+    print("\nCommands to use: " + cmd)
+
+    choice = input("\nType in the command you want to use: \n")
     choice = choice.lower()
 
     if choice == "save":
@@ -128,7 +132,8 @@ def stash():
         run("stash", "drop")
 
     else:
-        print("\nInvalid command! Use list or n.\n")
+        print("\nNot a valid command!")
+        print("\nUse " + cmd)
 
 
 def main():
