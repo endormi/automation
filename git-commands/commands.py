@@ -51,7 +51,7 @@ def branch():
     choice = choice.lower()
 
     if choice == "y":
-        run("push", "origin", branch)
+        run("push", "-u", "origin", br)
 
     elif choice == "n":
         print("\nOkay, goodbye!\n")
