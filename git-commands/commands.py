@@ -77,12 +77,26 @@ def pull():
         print("\nInvalid command! Use y or n.\n")
 
 
+def fetch():
+
+    print("\nFetches changes from the current folder.")
+    run("fetch")
+
+
 def merge():
 
     branch = input("\nType in the name of your branch: ")
     br = f'{branch}'
 
     run("merge", br)
+
+
+def reset():
+
+    filename = input("\nType in the name of your file: ")
+    fl = f'{filename}'
+
+    run("reset", fl)
 
 
 def blame():
@@ -138,7 +152,7 @@ def stash():
 
 def main():
 
-    choices = 'clone, commit, branch, pull, merge, blame and stash'
+    choices = 'clone, commit, branch, pull, fetch, merge, reset, blame and stash'
     print("Commands to use: " + choices)
 
     choose_command = input("Type in the command you want to use: ")
@@ -156,8 +170,14 @@ def main():
     elif choose_command == "pull":
         pull()
 
+    elif choose_command == "fetch":
+        fetch()
+
     elif choose_command == "merge":
         merge()
+
+    elif choose_command == "reset":
+        reset()
 
     elif choose_command == "blame":
         blame()
