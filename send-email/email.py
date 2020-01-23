@@ -21,6 +21,12 @@ https://myaccount.google.com/apppasswords
 """
 Your_Password = 'password'
 
+receiver = input("Person receiving the email: ")
+__receiver__ = f'{receiver}'
+subject = input("Message subject: ")
+__subject__ = f'{subject}'
+content = input("Message content: ")
+__content__ = f'{content}'
 
 with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
     send__mail.starttls()
@@ -28,9 +34,9 @@ with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
 
     message = EmailMessage()
     message['From'] = Your_Email
-    message['To'] = 'Receiver'
-    message['subject'] = 'email subject'
-    message.set_content('email content')
+    message['To'] = __receiver__
+    message['subject'] = __subject__
+    message.set_content(__content__)
 
     with open('image/file', 'rb') as image_attachment:
         img = image_attachment.read()
