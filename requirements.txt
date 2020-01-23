@@ -1,5 +1,6 @@
 html-testRunner>=1.2.1
+playsound>=1.2.2
 PyAutoGUI>=0.9.47
 requests>=2.22.0
 selenium>=3.141.0
-playsound>=1.2.2
+XlsxWriter>=1.2.7

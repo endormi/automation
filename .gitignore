@@ -14,3 +14,9 @@ venv.bak/
 
 # To ignore selenium-testing testresults:
 *.html
+
+# To ignore excel files:
+*.xlsx
+*.xlsb
+*.xltx
+*.xls
