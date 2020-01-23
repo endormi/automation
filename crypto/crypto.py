@@ -25,9 +25,6 @@ Create your ifttt applet and follow the webhooks documentation
 ifttt_url = ''
 
 
-crypto_ts = 1000
-
-
 def latest():
     response = requests.get(api)
     res = response.json()
