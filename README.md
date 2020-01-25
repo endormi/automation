@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 - [Crypto](https://github.com/endormi/automation/blob/master/crypto/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
-- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to excel (Currently has only one `.py` file, but I will be adding more later).
+- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later).
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
