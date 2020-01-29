@@ -2,6 +2,8 @@
 
 Collection of my automated tasks.
 
+> **Disclaimer**: Some of the scripts are small and may not be very significant such as [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) and [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
+
 Install requirements:
 
 ```sh
