@@ -2,7 +2,7 @@
 
 Collection of my automated tasks.
 
-> **Disclaimer**: Some of the scripts are small and may not be very significant such as [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) and [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
+> **Disclaimer**: Some of the scripts are small and may not be very useful such as [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) and [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
 
 > You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
