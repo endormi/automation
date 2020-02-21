@@ -13,9 +13,9 @@ pip install -r requirements.txt
 ```
 
 - [Crypto](https://github.com/endormi/automation/blob/master/crypto/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
-- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later).
+- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
-- [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later).
+- [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
