@@ -124,10 +124,10 @@ def stash():
 
         run("stash", "save", stash_message)
 
-    if choice == "li":
+    elif choice == "li":
         run("stash", "li")
 
-    if choice == "pop":
+    elif choice == "pop":
         run("stash", "pop")
 
     elif choice == "show":
