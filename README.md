@@ -12,7 +12,9 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
+- [Compress](https://github.com/endormi/automation/blob/master/compress) - Compressing and extracting `.zip` files.
 - [Crypto](https://github.com/endormi/automation/blob/master/crypto/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
+- [CSV](https://github.com/endormi/automation/blob/master/csv/parse.py) - Parse CSV files.
 - [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
 - [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
@@ -24,6 +26,7 @@ pip install -r requirements.txt
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write and post tweets.
+- [Whatsapp](https://github.com/endormi/automation/blob/master/whatsapp/msg.py) - Send Whatsapp message (I'm thinking of switching from Whatsapp, but thought this still should be added).
 
 ## License
 

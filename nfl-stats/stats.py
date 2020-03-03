@@ -9,7 +9,12 @@ Automate the process of getting player stats (passing, rushing and receiving) an
 
 import nflgame
 
-games = nflgame.games(2013, week=13)
+year = input("Year: ")
+__year__ = f'{year}'
+week = input("Week: ")
+__week__ = f'{week}'
+
+games = nflgame.games(__year__, week=__week__)
 players = nflgame.combine_game_stats(games)
 plays = nflgame.combine_plays(games)
 
@@ -23,8 +28,7 @@ hey = color.NOTICE + '''
 Hello,
 This was made possible by BurntSushi and his awesome nflgame python package.
 Link: [https://github.com/BurntSushi/nflgame].
-This is just a very small script and not that useful. It lists 2013, week 13 stats (limited to 15).
-Why year 2013? I'm a huge fan of the Seahawks and this is the year the Seahawks won the Superbowl.
+It lists year (your choice), week (your choice) stats (limited to your choice).
 I'll be thinking about more ideas to do with nflgame package.\n''' + color.END
 
 
@@ -37,27 +41,30 @@ def pas():
     choice = input("\nType in the command you want to use: ")
     choice = choice.lower()
 
+    li = input("\nLimit (normally 10): ")
+    __li__ = f'{li}'
+
     if choice == "players":
-        for p in players.passing().sort('passing_yds').limit(15):
+        for p in players.passing().sort('passing_yds').limit(__li__):
             msg = '%s %d passes for %d yards and %d TDs'
             print(msg % (p, p.passing_att, p.passing_yds, p.passing_tds))
         print("")
         print("--QBs end here--")
 
     elif choice == "plays":
-        for p in plays.sort('passing_yds').limit(15):
+        for p in plays.sort('passing_yds').limit(__li__):
             print(p)
         print("")
         print("--Best passing plays end here--")
 
     elif choice == "both":
-        for p in players.passing().sort('passing_yds').limit(15):
+        for p in players.passing().sort('passing_yds').limit(__li__):
             msg = '%s %d passes for %d yards and %d TDs'
             print(msg % (p, p.passing_att, p.passing_yds, p.passing_tds))
         print("")
         print("--QBs end here--")
 
-        for p in plays.sort('passing_yds').limit(15):
+        for p in plays.sort('passing_yds').limit(__li__):
             print(p)
         print("")
         print("--Best passing plays end here--")
@@ -76,27 +83,30 @@ def rush():
     choice = input("\nType in the command you want to use: ")
     choice = choice.lower()
 
+    li = input("\nLimit (normally 10): ")
+    __li__ = f'{li}'
+
     if choice == "players":
-        for p in players.rushing().sort('rushing_yds').limit(15):
+        for p in players.rushing().sort('rushing_yds').limit(__li__):
             msg = '%s %d carries for %d yards and %d TDs'
             print(msg % (p, p.rushing_att, p.rushing_yds, p.rushing_tds))
         print("")
         print("--RBs end here--")
 
     elif choice == "plays":
-        for p in plays.sort('rushing_yds').limit(15):
+        for p in plays.sort('rushing_yds').limit(__li__):
             print(p)
         print("")
         print("--Best rushing plays end here--")
 
     elif choice == "both":
-        for p in players.rushing().sort('rushing_yds').limit(15):
+        for p in players.rushing().sort('rushing_yds').limit(__li__):
             msg = '%s %d carries for %d yards and %d TDs'
             print(msg % (p, p.rushing_att, p.rushing_yds, p.rushing_tds))
         print("")
         print("--RBs end here--")
 
-        for p in plays.sort('rushing_yds').limit(10):
+        for p in plays.sort('rushing_yds').limit(__li__):
             print(p)
         print("")
         print("--Best rushing plays end here--")
@@ -115,8 +125,11 @@ def rec():
     choice = input("\nType in the command you want to use: ")
     choice = choice.lower()
 
+    li = input("\nLimit (normally 10): ")
+    __li__ = f'{li}'
+
     if choice == "players":
-        for p in players.receiving().sort('receiving_yds').limit(15):
+        for p in players.receiving().sort('receiving_yds').limit(__li__):
             msg = '%s %d catches for %d yards and %d TDs'
             print(msg % (p, p.receiving_att, p.receiving_yds, p.receiving_tds))
 
@@ -124,20 +137,20 @@ def rec():
         print("--WRs and TEs end here--")
 
     elif choice == "plays":
-        for p in plays.sort('receiving_yds').limit(15):
+        for p in plays.sort('receiving_yds').limit(__li__):
             print(p)
         print("")
         print("--Best receiving plays end here--")
 
     elif choice == "both":
-        for p in players.receiving().sort('receiving_yds').limit(15):
+        for p in players.receiving().sort('receiving_yds').limit(__li__):
             msg = '%s %d catches for %d yards and %d TDs'
             print(msg % (p, p.receiving_att, p.receiving_yds, p.receiving_tds))
 
         print("")
         print("--WRs and TEs end here--")
 
-        for p in plays.sort('receiving_yds').limit(15):
+        for p in plays.sort('receiving_yds').limit(__li__):
             print(p)
         print("")
         print("--Best receiving plays end here--")
@@ -156,16 +169,19 @@ def stats_to_csv():
     choice = input("\nType in the command you want to use: ")
     choice = choice.lower()
 
+    year = input("Year: ")
+    __year__ = f'{year}'
+
     if choice == "stat":
         games.players.csv('player-stats.csv')
 
     elif choice == "stat_p":
-        nflgame.combine(nflgame.games(2013)).csv('season2013.csv')
+        nflgame.combine(nflgame.games(__year__)).csv('season_stats.csv')
 
     elif choice == "both":
         games.players.csv('player-stats.csv')
 
-        nflgame.combine(nflgame.games(2013)).csv('season2013.csv')
+        nflgame.combine(nflgame.games(__year__)).csv('season_stats.csv')
 
     else:
         print("\nNot a valid command!")
@@ -174,7 +190,7 @@ def stats_to_csv():
 
 def main():
 
-    print(hey + "\n")
+    print("\n" + hey + "\n")
 
     choices = 'pas (passing), rush (rushing), rec (receiving) and stats_to_csv'
     print("Commands to use: " + choices)
@@ -199,4 +215,5 @@ def main():
         print("\nUse " + choices)
 
 
-main()
+if __name__ == '__main__':
+    main()

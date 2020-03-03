@@ -75,4 +75,5 @@ def main():
         print("Check your path: " + PATH)
 
 
-main()
+if __name__ == '__main__':
+    main()

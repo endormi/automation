@@ -190,4 +190,5 @@ def main():
         print("\nUse " + choices)
 
 
-main()
+if __name__ == '__main__':
+    main()
