@@ -8,6 +8,9 @@ Automate the process of getting player stats (passing, rushing and receiving) an
 """
 
 import nflgame
+from pyfiglet import figlet_format
+from termcolor import cprint
+
 
 year = input("Year: ")
 __year__ = f'{year}'
@@ -18,14 +21,15 @@ games = nflgame.games(__year__, week=__week__)
 players = nflgame.combine_game_stats(games)
 plays = nflgame.combine_plays(games)
 
+logo = 'NFL-Stats'
+
 
 class color:
-    NOTICE = '\033[91m' # red
-    END = '\033[0m' #normal color
+    NOTICE = '\033[91m'
+    END = '\033[0m'
 
 
-hey = color.NOTICE + '''
-Hello,
+info = color.NOTICE + '''
 This was made possible by BurntSushi and his awesome nflgame python package.
 Link: [https://github.com/BurntSushi/nflgame].
 It lists year (your choice), week (your choice) stats (limited to your choice).
@@ -33,7 +37,6 @@ I'll be thinking about more ideas to do with nflgame package.\n''' + color.END
 
 
 def pas():
-
     cmd = 'players, plays and both'
 
     print("\nCommands to use: " + cmd)
@@ -75,7 +78,6 @@ def pas():
 
 
 def rush():
-
     cmd = 'players, plays and both'
 
     print("\nCommands to use: " + cmd)
@@ -117,7 +119,6 @@ def rush():
 
 
 def rec():
-
     cmd = 'players, plays and both'
 
     print("\nCommands to use: " + cmd)
@@ -161,7 +162,6 @@ def rec():
 
 
 def stats_to_csv():
-
     cmd = 'stat (every statistic from a game), stat_p (statistics of every player from an entire season) and both'
 
     print("\nCommands to use: " + cmd)
@@ -189,8 +189,8 @@ def stats_to_csv():
 
 
 def main():
-
-    print("\n" + hey + "\n")
+    cprint(figlet_format(logo, font='slant'), 'green')
+    print("\n" + info + "\n")
 
     choices = 'pas (passing), rush (rushing), rec (receiving) and stats_to_csv'
     print("Commands to use: " + choices)

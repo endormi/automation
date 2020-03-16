@@ -8,16 +8,28 @@ Automate the process of using commands such as clone, commit, branch, pull, merg
 """
 
 import subprocess
+from pyfiglet import figlet_format
+from termcolor import cprint
+
+
+logo = 'Git-Commands'
+
+
+class color:
+    NOTICE = '\033[91m'
+    END = '\033[0m'
+
+
+info = color.NOTICE + '''
+Automate the process of using commands such as clone, commit, branch, pull, merge, blame and stash.\n''' + color.END
 
 
 def run(*args):
-
     return subprocess.check_call(['git'] + list(args))
 
 
 def clone():
-
-    print("\nYou will be asked for the user first and then the repository name\n")
+    print("\nYou will be asked for the user first and then the repository name.\n")
 
     user = input("User: ")
     __user__ = f'{user}'
@@ -32,7 +44,6 @@ def clone():
 
 
 def commit():
-
     message = input("\nType in your commit message: ")
     commit_message = f'{message}'
 
@@ -41,7 +52,6 @@ def commit():
 
 
 def branch():
-
     branch = input("\nType in the name of the branch you want to make: ")
     br = f'{branch}'
 
@@ -61,7 +71,6 @@ def branch():
 
 
 def pull():
-
     print("\nPulls changes from the current folder if *.git is initialized.")
 
     choice = input("\nDo you want to pull the changes from GitHub? (y/n): ")
@@ -78,13 +87,11 @@ def pull():
 
 
 def fetch():
-
     print("\nFetches changes from the current folder.")
     run("fetch")
 
 
 def merge():
-
     branch = input("\nType in the name of your branch: ")
     br = f'{branch}'
 
@@ -92,7 +99,6 @@ def merge():
 
 
 def reset():
-
     filename = input("\nType in the name of your file: ")
     fl = f'{filename}'
 
@@ -100,7 +106,6 @@ def reset():
 
 
 def blame():
-
     file = input("\nType in the name of the file: ")
     fi = f'{file}'
 
@@ -108,7 +113,6 @@ def blame():
 
 
 def stash():
-
     print("\nDo you want to save, list, pop, show, branch, clear or drop? ")
 
     cmd = 'save, li, pop, show, branch, clear and drop'
@@ -151,6 +155,8 @@ def stash():
 
 
 def main():
+    cprint(figlet_format(logo, font='slant'), 'green')
+    print(info + "\n")
 
     choices = 'clone, commit, branch, pull, fetch, merge, reset, blame and stash'
     print("Commands to use: " + choices)

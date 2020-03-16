@@ -10,6 +10,22 @@ and moves them inside specified folders
 import os
 import shutil
 import time
+from pyfiglet import figlet_format
+from termcolor import cprint
+
+
+logo = 'Organizer'
+
+
+class color:
+    NOTICE = '\033[91m'
+    END = '\033[0m'
+
+
+info = color.NOTICE + '''
+Automated organizer for images, audio, texts, videos, compressed files
+ and moves them inside specified folders.\n''' + color.END
+
 
 PATH = r'folder/to/organize'
 
@@ -25,7 +41,6 @@ move_file = os.listdir(PATH)
 
 
 def organize():
-
     print("Organizing files!")
 
     for mv in move_file:
@@ -65,6 +80,8 @@ def organize():
 
 
 def main():
+    cprint(figlet_format(logo, font='slant'), 'green')
+    print(info + "\n")
 
     if len(move_file) > 0:
         print(f"Found {len(move_file)} file(s). \n")
