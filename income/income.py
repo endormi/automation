@@ -2,7 +2,7 @@
 
 author: @endormi
 
-Automated income tracker
+Income tracker
 Automatically adds to excel
 
 """
@@ -20,7 +20,7 @@ wsb.write('A1', 'Income', bold)
 wsb.write('A2', 'Date:', bold)
 wsb.write('B2', 'Type of income:', bold)
 wsb.write('C2', 'Amount of income:', bold)
-wsb.write('E2', 'Total:', bold)
+wsb.write('D2', 'Total:', bold)
 
 currency_format = wb.add_format({'num_format': '€#,##0.00'})
 
@@ -33,12 +33,12 @@ income = (
     ['01.01.2020', 'type5', '1000'],
 )
 
-for i, c, a in (income):
+for i, r, c in (income):
     wsb.write(row, col, i)
-    wsb.write(row, col + 1, c)
-    wsb.write(row, col + 2, a)
+    wsb.write(row, col + 1, r)
+    wsb.write(row, col + 2, c)
     row += 1
 
-wsb.write_formula("E3", "=SUM(C3:C7)", currency_format)
+wsb.write_formula("D3", "=SUM(C3:C7)", currency_format)
 
 wb.close()
