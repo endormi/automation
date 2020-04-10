@@ -30,7 +30,7 @@ wsp.write('B2', 'Type of expense:', bold)
 wsp.write('C2', 'Amount of expense:', bold)
 wsp.write('D2', 'Total:', bold)
 
-currency_format = wb.add_format({'num_format': '€#,##0.00'})
+currency_format = wb.add_format({'num_format': '# ##0.00 €'})
 
 business = (
     ['01.01.2020', 'type1', '1000'],

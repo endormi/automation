@@ -22,7 +22,7 @@ wsb.write('B2', 'Type of income:', bold)
 wsb.write('C2', 'Amount of income:', bold)
 wsb.write('D2', 'Total:', bold)
 
-currency_format = wb.add_format({'num_format': '€#,##0.00'})
+currency_format = wb.add_format({'num_format': '# ##0.00 €'})
 
 income = (
     ['01.01.2020', 'type1', '1000'],

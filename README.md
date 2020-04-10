@@ -6,6 +6,8 @@ Collection of automated tasks.
 
 > You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
+> I have created many of these with the idea, that these files are easily customizable and giving a good foundation for your tasks.
+
 Install requirements:
 
 ```sh
@@ -15,9 +17,9 @@ pip install -r requirements.txt
 - [Compress](https://github.com/endormi/automation/blob/master/compress) - Compressing and extracting `.zip` files.
 - [Crypto](https://github.com/endormi/automation/blob/master/crypto/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
 - [CSV](https://github.com/endormi/automation/blob/master/csv/parse.py) - Parse CSV files.
-- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
+- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
-- [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time).
+- [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [NFL-stats](https://github.com/endormi/automation/blob/master/nfl-stats/stats.py) - Stats for players yards and tds (passing, rushing and receiving), also with best plays and ability to add stats to csv. **Note**: This might not work on **Py3** version (I tested this on **Py2** and **Py3** and it did work, but it's known that this has issues working when using **Py3**).
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
