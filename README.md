@@ -6,7 +6,7 @@ Collection of automated tasks.
 
 > You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
-> I have created many of these with the idea, that these files are easily customizable and giving a good foundation for your tasks.
+> I have created many of these with the idea, that the scripts are easily customizable and giving a good foundation for your tasks.
 
 Install requirements:
 
@@ -20,10 +20,12 @@ pip install -r requirements.txt
 - [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
 - [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
-- [NFL-stats](https://github.com/endormi/automation/blob/master/nfl-stats/stats.py) - Stats for players yards and tds (passing, rushing and receiving), also with best plays and ability to add stats to csv. **Note**: This might not work on **Py3** version (I tested this on **Py2** and **Py3** and it did work, but it's known that this has issues working when using **Py3**).
+- [Mem](https://github.com/endormi/automation/blob/master/mem/memory.py) - Few lines of code to check computer memory (total, available, usage, used and free).
+- [NFL-stats](https://github.com/endormi/automation/blob/master/nfl-stats/stats.py) - Stats for players yards and tds (passing, rushing and receiving), also with best plays and ability to add stats to csv.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
+- [Process](https://github.com/endormi/automation/blob/master/process/process.py) - Two lines of code to check program process time.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository.
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).

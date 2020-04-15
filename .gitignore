@@ -20,3 +20,6 @@ venv.bak/
 *.xlsb
 *.xltx
 *.xls
+
+# To ignore txt file:
+file.txt
