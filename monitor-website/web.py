@@ -26,19 +26,21 @@ Your_Password = 'password'
 req = requests.get(url, timeout=1)
 req.raise_for_status()
 
-if req.status_code != 200:
-    with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
-        send__mail.starttls()
+while True:
+    if req.status_code != 200:
+        with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
+            send__mail.starttls()
 
-        send__mail.login(Your_Email, Your_Password)
+            send__mail.login(Your_Email, Your_Password)
 
-        sub = 'Your site is down!'
-        body = 'Restart the server and make sure it is running.'
-        message = f'Subject: {sub} \n\n {body}'
+            sub = 'Your site is down!'
+            body = 'Restart the server and make sure it is running.'
+            message = f'Subject: {sub} \n\n {body}'
 
-        send__mail.sendmail(Your_Email, Your_Email, message)
-        print("Email sent!")
+            send__mail.sendmail(Your_Email, Your_Email, message)
+            print("Email sent!")
 
-    playsound('volume_warning.wav')
-else:
-    print("Works correctly")
+        playsound('volume_warning.wav')
+        break
+    else:
+        continue
