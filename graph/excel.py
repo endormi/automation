@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 
 df = pandas.read_excel('filename.xslx')
-val = df[['Expenses', 'Income']]
+val = df[['Month', 'Income']]
 
-xy = val.plot.bar(x='Expenses', y='Income')
+xy = val.plot.bar(x='Month', y='Income')
 plt.show()
