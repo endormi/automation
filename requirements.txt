@@ -1,10 +1,16 @@
 html-testRunner>=1.2.1
+matplotlib>=3.1.1
+nflgame-redux>=2.0.1b1
+numpy>=1.16.4
+opencv-python>=4.2.0.34
+pandas>=0.25.1
+phue>=1.1
 playsound>=1.2.2
 psutil>=5.7.0
 PyAutoGUI>=0.9.47
 pyfiglet>=0.8.post1
-nflgame-redux>=2.0.1b1
 requests>=2.22.0
 selenium>=3.141.0
 termcolor>=1.1.0
 XlsxWriter>=1.2.7
+youtube-dl>=2020.6.16.1

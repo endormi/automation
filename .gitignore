@@ -23,3 +23,6 @@ venv.bak/
 
 # To ignore txt file:
 file.txt
+
+# To ignore downloaded YouTube audio:
+*.mp3
