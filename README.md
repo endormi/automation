@@ -17,6 +17,8 @@ pip install -r requirements.txt
 - [DL-file](https://github.com/endormi/automation/blob/master/dl-file/dl.py) - File downloader.
 - [Dwin](https://github.com/endormi/automation/blob/master/dwin/dwin.py) - Running a terminal of choice and commands using PyAutoGUI.
 - [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
+- [Graph](https://github.com/endormi/automation/blob/master/graph/excel.py) - Excel graph.
+- [Hue-light](https://github.com/endormi/automation/blob/master/hue-light/control.py) - Control hue lights.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
 - [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Mem](https://github.com/endormi/automation/blob/master/mem/memory.py) - Few lines of code to check computer memory (total, available, usage, used and free).
