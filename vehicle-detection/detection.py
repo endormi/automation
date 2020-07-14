@@ -2,7 +2,7 @@
 
 author: @endormi
 
-Automated real time vehicle detection
+Automated vehicle detection
 
 """
 

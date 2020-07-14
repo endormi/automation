@@ -27,7 +27,7 @@ pip install -r requirements.txt
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
 - [Process](https://github.com/endormi/automation/blob/master/process/process.py) - Two lines of code to check program process time.
-- [Vehicle-detection](https://github.com/endormi/automation/blob/master/vehicle-detection/detection.py) - Real time vehicle detection.
+- [Vehicle-detection](https://github.com/endormi/automation/blob/master/vehicle-detection/detection.py) - Vehicle detection.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository.
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
