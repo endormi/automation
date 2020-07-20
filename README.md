@@ -6,6 +6,8 @@ Collection of automated tasks.
 
 > You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
+> I created some of the scripts with the intention that they're a foundation for more complex automated scripts such as. expenses, income, selenium-testing and a few more.
+
 Install requirements:
 
 ```sh
