@@ -23,9 +23,11 @@ pip install -r requirements.txt
 - [Hue-light](https://github.com/endormi/automation/blob/master/hue-light/control.py) - Control hue lights.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge, blame and stash.
 - [Income](https://github.com/endormi/automation/blob/master/income/income.py) - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
+- [Kbd](https://github.com/endormi/automation/blob/master/kbd) - Small scripts to control your keyboard (easy to customize for your own tasks).
 - [Mem](https://github.com/endormi/automation/blob/master/mem/memory.py) - Few lines of code to check computer memory (total, available, usage, used and free).
 - [NFL-stats](https://github.com/endormi/automation/blob/master/nfl-stats/stats.py) - Stats for players yards and tds (passing, rushing and receiving), also with best plays and ability to add stats to csv.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
+- [Mortgage](https://github.com/endormi/automation/blob/master/mortgage/payment.py) - Count the mortgage payment that you need to pay per month.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
 - [Process](https://github.com/endormi/automation/blob/master/process/process.py) - Two lines of code to check program process time.
@@ -33,6 +35,7 @@ pip install -r requirements.txt
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository.
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
+- [Spawn-enemy](https://github.com/endormi/automation/blob/master/spawn-enemy/spawn.py) - Spawn an dragon in Skyrim for every 5 seconds.
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write and post tweets.
 - [Whatsapp](https://github.com/endormi/automation/blob/master/whatsapp/msg.py) - Send Whatsapp message (I'm thinking of switching from Whatsapp, but thought this still should be added).
 - [Youtube](https://github.com/endormi/automation/blob/master/youtube/dl.py) - Download an audio from YouTube.
