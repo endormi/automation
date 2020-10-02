@@ -33,6 +33,7 @@ pip install -r requirements.txt
 - [Process](https://github.com/endormi/automation/blob/master/process/process.py) - Two lines of code to check program process time.
 - [Vehicle-detection](https://github.com/endormi/automation/blob/master/vehicle-detection/detection.py) - Vehicle detection.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository.
+- [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - Scheduled jobs (open email, shutdown computer etc.).
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Spawn-enemy](https://github.com/endormi/automation/blob/master/spawn-enemy/spawn.py) - Spawn an dragon in Skyrim for every 5 seconds.
