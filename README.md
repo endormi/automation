@@ -36,7 +36,6 @@ pip install -r requirements.txt
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - X - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
-- [Spawn-enemy](https://github.com/endormi/automation/blob/master/spawn-enemy/spawn.py) - Spawn an dragon in Skyrim for every 5 seconds.
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter/tweet.py) - Write and post tweets.
 - [Whatsapp](https://github.com/endormi/automation/blob/master/whatsapp/msg.py) - Send Whatsapp message (I'm thinking of switching from Whatsapp, but thought this still should be added).
 - [Youtube](https://github.com/endormi/automation/blob/master/youtube/dl.py) - Download an audio from YouTube.
