@@ -70,11 +70,6 @@ def organize():
                 os.mkdir(f"{compressed_files}")
             shutil.move(mv, compressed_files)
 
-    print(".")
-    time.sleep(1)
-    print(".")
-    time.sleep(1)
-    print(".")
     time.sleep(1)
     print("Finished organizing files!")
 
