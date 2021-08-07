@@ -9,6 +9,7 @@ Automatically adds to excel
 
 import xlsxwriter
 
+
 wb = xlsxwriter.Workbook('filename.xlsx', {'strings_to_numbers': True})
 wsb = wb.add_worksheet(name='Business Expenses 2020')
 wsp = wb.add_worksheet(name='Personal Expenses 2020')

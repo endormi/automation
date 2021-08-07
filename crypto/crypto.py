@@ -11,6 +11,7 @@ import requests
 from datetime import datetime
 import time
 
+
 """
 https://api.coinmarketcap.com/v1/ticker/bitcoin/
 https://api.coinmarketcap.com/v1/ticker/litecoin/

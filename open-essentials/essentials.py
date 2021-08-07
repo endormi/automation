@@ -11,6 +11,7 @@ import pyautogui
 import webbrowser
 import time
 
+
 webbrowser.open('chrome')
 """
 webbrowser.open('mozilla')

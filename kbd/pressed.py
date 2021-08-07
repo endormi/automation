@@ -8,6 +8,7 @@ Read and pressed key (is_pressed requires you to actually hold it)
 
 import keyboard
 
+
 while True:
     if keyboard.read_key() == 'c':
         print('Pressed C')

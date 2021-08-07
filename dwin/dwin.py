@@ -12,6 +12,7 @@ This script starts a new Django project.
 import pyautogui
 import time
 
+
 terminal = ''
 dir = ''
 folder = ''

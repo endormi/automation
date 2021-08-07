@@ -11,6 +11,7 @@ import smtplib
 from email.message import EmailMessage
 import imghdr
 
+
 PORT = 587
 
 Your_Email = 'example@company.com'

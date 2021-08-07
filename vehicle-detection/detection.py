@@ -6,8 +6,8 @@ Automated vehicle detection
 
 """
 
-
 import cv2
+
 
 haar_cascade = 'cars.xml'
 video = 'cars.mp4'
