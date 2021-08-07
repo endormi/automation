@@ -28,4 +28,4 @@ with open(file, 'a') as i:
     i.write('Free memory: ' + str(mem.free) + '\n')
     i.write('\n')
 
-    print('\nWrote results to' + file)
+    print('\nWrote results to ' + file)
