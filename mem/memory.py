@@ -7,7 +7,6 @@ Small script to check computer memory (total, available, usage, used and free)
 """
 
 import psutil
-import time
 
 
 file = 'file.txt'
@@ -29,11 +28,4 @@ with open(file, 'a') as i:
     i.write('Free memory: ' + str(mem.free) + '\n')
     i.write('\n')
 
-    print()
-    print('Writing to ' + file + '...')
-    print('.')
-    time.sleep(1)
-    print('.')
-    time.sleep(1)
-    print('.')
-    print('Finished!')
+    print('\nWrote results to' + file)
