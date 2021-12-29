@@ -15,9 +15,7 @@ pip install -r requirements.txt
 ```
 
 - [Compress](https://github.com/endormi/automation/blob/master/compress) - Compressing and extracting `.zip` files.
-- [Crypto](https://github.com/endormi/automation/blob/master/crypto/crypto.py) - Notifies (sends a SMS message) when a specific cryptocurrency has lost or gained value (using IFTTT app).
 - [DL-file](https://github.com/endormi/automation/blob/master/dl-file/dl.py) - X - File downloader.
-- [Dwin](https://github.com/endormi/automation/blob/master/dwin/dwin.py) - X - Running a terminal of choice and commands.
 - [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) - X - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Graph](https://github.com/endormi/automation/blob/master/graph/excel.py) - X - Excel graph.
 - [Hue-light](https://github.com/endormi/automation/blob/master/hue-light/control.py) - X - Control hue lights.
