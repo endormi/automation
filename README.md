@@ -8,11 +8,19 @@ Collection of automated tasks.
 
 > I created some of the scripts with the intention that they're a foundation for more complex automated scripts such as. expenses, income, selenium-testing and a few more. The files that are these types of scripts will have (X).
 
+Clone repository:
+
+```
+git clone https://github.com/endormi/automation.git
+```
+
 Install requirements:
 
 ```sh
 pip install -r requirements.txt
 ```
+
+Now you can run every script.
 
 - [Compress](https://github.com/endormi/automation/blob/master/compress) - Compressing and extracting `.zip` files.
 - [DL-file](https://github.com/endormi/automation/blob/master/dl-file/dl.py) - X - File downloader.
