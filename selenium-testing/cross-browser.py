@@ -12,6 +12,9 @@ import pyautogui
 import time
 
 
+web_browser = {}
+
+
 def test_browsers(wd):
     try:
         """
@@ -19,41 +22,21 @@ def test_browsers(wd):
 
         Look at the https://selenium.dev/downloads/ docs on how to set all of them up
         """
-        if wd == "Chrome":
+        web_browser = {
+            'Firefox': webdriver.Firefox,
+            'Edge': webdriver.Edge,
+            'Ie': webdriver.Ie,
+            'Safari': webdriver.Safari,
+            'Opera': webdriver.Opera,
+        }
+
+        if wd == 'Chrome':
             browser = webdriver.Chrome(r'file/to/driver/if/needed/otherwise/remove/r')
-            browser.maximize_window()
+        else:
+            browser = web_browser.get(wd)()
 
-            return browser
-
-        elif "Firefox":
-            browser = webdriver.Firefox()
-            browser.maximize_window()
-
-            return browser
-
-        elif wd == "Edge":
-            browser = webdriver.Edge()
-            browser.maximize_window()
-
-            return browser
-        
-        elif wd == "Ie":
-            browser = webdriver.Ie()
-            browser.maximize_window()
-
-            return browser
-
-        elif wd == "Safari":
-            browser = webdriver.Safari()
-            browser.maximize_window()
-
-            return browser
-
-        elif wd == "Opera":
-            browser = webdriver.Opera()
-            browser.maximize_window()
-
-            return browser
+        browser.maximize_window()
+        return browser
 
     except Exception as msg:
         print(msg)
@@ -67,9 +50,9 @@ def test_python_search(wd):
     time.sleep(1)
     pyautogui.typewrite(['enter'])
     time.sleep(2)
-    browser.find_element_by_xpath("/html/body/div/div[3]/div/section/form/ul/li[1]/h3/a").click()
+    browser.find_element_by_xpath('/html/body/div/div[3]/div/section/form/ul/li[1]/h3/a').click()
     time.sleep(1)
-    browser.find_element_by_xpath("/html/body/div/div[3]/div/section/article/p[2]/i/a[1]").click()
+    browser.find_element_by_xpath('/html/body/div/div[3]/div/section/article/p[2]/i/a[1]').click()
     time.sleep(1)
     print(browser.current_url)
 

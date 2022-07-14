@@ -1,13 +1,10 @@
 html-testRunner>=1.2.1
-keyboard>=0.13.5
 matplotlib>=3.1.1
-nflgame-redux>=2.0.1b1
 numpy>=1.16.4
 opencv-python>=4.2.0.34
 pandas>=0.25.1
 phue>=1.1
 playsound>=1.2.2
-psutil>=5.7.0
 PyAutoGUI>=0.9.47
 pyfiglet>=0.8.post1
 requests>=2.22.0

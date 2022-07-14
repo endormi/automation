@@ -27,7 +27,7 @@ def certain_show():
 def open_email():
     # If you need to login everytime, you can use my selenium-testing templates to figure it out
     print('Opening email..')
-    webbrowser.open('https://mail.google.com/mail/u/0/#inbox')
+    webbrowser.open(your_email)
 
 
 def shutdown():

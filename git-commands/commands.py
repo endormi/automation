@@ -3,7 +3,7 @@
 author: @endormi
 
 Automated Git commands
-Automate the process of using commands such as clone, commit, branch, pull, merge, blame and stash
+Automate the process of using commands such as clone, commit, branch, pull, merge and blame
 
 """
 
@@ -21,7 +21,10 @@ class color:
 
 
 info = color.NOTICE + '''
-Automate the process of using commands such as clone, commit, branch, pull, merge, blame and stash.\n''' + color.END
+Automate the process of using commands such as clone, commit, branch, pull, merge and blame.\n''' + color.END
+
+
+dict = {}
 
 
 def run(*args):
@@ -29,171 +32,82 @@ def run(*args):
 
 
 def clone():
-    print("\nYou will be asked for the user first and then the repository name.\n")
+    print('\nYou will be asked for the user first and then the repository name.\n')
 
-    user = input("User: ")
-    __user__ = f'{user}'
-    repo = input("Repository: ")
-    __repo__ = f'{repo}'
+    user = input('User: ')
+    repo = input('Repository: ')
 
-    print("\nChoose the local path for your clone.")
-    local = input("Local path: ")
-    local_path = f'{local}'
-
-    subprocess.Popen(['git', 'clone', "https://github.com/" + __user__ + "/" + __repo__ + ".git", local_path])
+    subprocess.Popen(['git', 'clone', 'https://github.com/' + user + '/' + repo + '.git'])
 
 
 def commit():
-    message = input("\nType in your commit message: ")
-    commit_message = f'{message}'
-
-    run("commit", "-am", commit_message)
-    run("push", "-u", "origin", "master")
+    commit_message = input('\nType in your commit message: ')
+    run('commit', '-am', commit_message)
+    run('push', '-u', 'origin', 'master')
 
 
 def branch():
-    branch = input("\nType in the name of the branch you want to make: ")
-    br = f'{branch}'
+    branch = input('\nType in the name of the branch you want to make: ')
+    run('checkout', '-b', branch)
 
-    run("checkout", "-b", br)
+    choice = input('\nDo you want to push the branch right now to GitHub? (y/n): ').lower()
 
-    choice = input("\nDo you want to push the branch right now to GitHub? (y/n): ")
-    choice = choice.lower()
-
-    if choice == "y":
-        run("push", "-u", "origin", br)
-
-    elif choice == "n":
-        print("\nOkay, goodbye!\n")
-
+    if choice == 'y':
+        run('push', '-u', 'origin', branch)
     else:
-        print("\nInvalid command! Use y or n.\n")
+        print('\nOkay, goodbye!\n')
 
 
 def pull():
-    print("\nPulls changes from the current folder if *.git is initialized.")
+    print('\nPulls changes from the current folder if *.git is initialized.')
+    choice = input('\nDo you want to pull the changes from GitHub? (y/n): ').lower()
 
-    choice = input("\nDo you want to pull the changes from GitHub? (y/n): ")
-    choice = choice.lower()
-
-    if choice == "y":
-        run("pull")
-
-    elif choice == "n":
-        print("\nOkay, goodbye!\n")
-
+    if choice == 'y':
+        run('pull')
     else:
-        print("\nInvalid command! Use y or n.\n")
+        print('\nOkay, goodbye!\n')
 
 
 def fetch():
-    print("\nFetches changes from the current folder.")
-    run("fetch")
+    print('\nFetches changes from the current folder.')
+    run('fetch')
 
 
 def merge():
-    branch = input("\nType in the name of your branch: ")
-    br = f'{branch}'
-
-    run("merge", br)
+    branch = input('\nType in the name of your branch: ')
+    run('merge', branch)
 
 
 def reset():
-    filename = input("\nType in the name of your file: ")
-    fl = f'{filename}'
-
-    run("reset", fl)
+    filename = input('\nType in the name of your file: ')
+    run('reset', filename)
 
 
 def blame():
-    file = input("\nType in the name of the file: ")
-    fi = f'{file}'
-
-    run("blame", fi)
-
-
-def stash():
-    print("\nDo you want to save, list, pop, show, branch, clear or drop? ")
-
-    cmd = 'save, li, pop, show, branch, clear and drop'
-
-    print("\nCommands to use: " + cmd)
-
-    choice = input("\nType in the command you want to use: ")
-    choice = choice.lower()
-
-    if choice == "save":
-        message = input("\nType in your stash message: ")
-        stash_message = f'{message}'
-
-        run("stash", "save", stash_message)
-
-    elif choice == "li":
-        run("stash", "li")
-
-    elif choice == "pop":
-        run("stash", "pop")
-
-    elif choice == "show":
-        run("stash", "show", "-p")
-
-    elif choice == "branch":
-        branch = input("\nType in the name of the branch you want to stash: ")
-        br = f'{branch}'
-
-        run("stash", "branch", br)
-
-    elif choice == "clear":
-        run("stash", "clear")
-
-    elif choice == "drop":
-        run("stash", "drop")
-
-    else:
-        print("\nNot a valid command!")
-        print("\nUse " + cmd)
+    file = input('\nType in the name of the file: ')
+    run('blame', file)
 
 
 def main():
     cprint(figlet_format(logo, font='slant'), 'green')
-    print(info + "\n")
+    print(f'{info} \n')
 
-    choices = 'clone, commit, branch, pull, fetch, merge, reset, blame and stash'
-    print("Commands to use: " + choices)
+    print('Commands to use: clone, commit, branch, pull, fetch, merge, reset and blame')
 
-    choose_command = input("Type in the command you want to use: ")
-    choose_command = choose_command.lower()
+    choose_command = input('Type in the command you want to use: ').lower()
 
-    if choose_command == "clone":
-        clone()
+    dict = {
+        'clone': clone,
+        'commit': commit,
+        'branch': branch,
+        'pull': pull,
+        'fetch': fetch,
+        'merge': merge,
+        'reset': reset,
+        'blame': blame
+    }
 
-    elif choose_command == "commit":
-        commit()
-
-    elif choose_command == "branch":
-        branch()
-
-    elif choose_command == "pull":
-        pull()
-
-    elif choose_command == "fetch":
-        fetch()
-
-    elif choose_command == "merge":
-        merge()
-
-    elif choose_command == "reset":
-        reset()
-
-    elif choose_command == "blame":
-        blame()
-
-    elif choose_command == "stash":
-        stash()
-
-    else:
-        print("\nNot a valid command!")
-        print("\nUse " + choices)
+    dict.get(choose_command, lambda: "Invalid")()
 
 
 if __name__ == '__main__':

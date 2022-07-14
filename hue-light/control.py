@@ -14,8 +14,9 @@ b = Bridge(ip)
 # If the app is not registered and the button is not pressed, press the button and call connect() (this only needs to be run a single time)
 b.connect()
 lights = b.get_light_objects('name')
+dict = {}
 
-#for light in ['Kitchen']
+# for light in ['Kitchen']
 #    lights[light].on = True
 #    lights[light].hue = 15000
 #    lights[light].saturation = 120
@@ -30,37 +31,22 @@ def movie():
         lights[light].saturation = 100
 
 
-def video_game():
-    for light in lights:
-        lights[light].on = True
-        lights[light].hue = 20000
-        lights[light].saturation = 120
-
-
 def turn_off():
     for light in lights:
         lights[light].on = False
 
 
 def main():
-    choices = 'movie, video_game & turn_off'
-    print("Commands to use: " + choices)
+    print('Commands to use: movie & turn_off')
 
-    choose_command = input("Type in the command you want to use: ")
-    choose_command = choose_command.lower()
+    choose_command = input("Type in the command you want to use: ").lower()
 
-    if choose_command == "movie":
-        movie()
+    dict = {
+        'movie': movie,
+        'turn_off': turn_off,
+    }
 
-    elif choose_command == "video_game":
-        video_game()
-
-    elif choose_command == "turn_off":
-        turn_off()
-
-    else:
-        print("\nNot a valid command!")
-        print("\nUse " + choices)
+    dict.get(choose_command, lambda: 'Invalid')()
 
 
 if __name__ == '__main__':
