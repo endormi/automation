@@ -32,7 +32,7 @@ Now you can run every script.
 - [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
 - [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - X - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
-- [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository.
+- [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository (uses selenium, but you can easliy also use the GitHub package).
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).
 - [Selenium-testing](https://github.com/endormi/automation/tree/master/selenium-testing) - X - Testing website functionality using websites such as GitHub and Stack Overflow. I am testing these specific websites, because the tests are easily modified to be used with personal and/or company websites.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
