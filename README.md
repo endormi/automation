@@ -4,7 +4,7 @@ Collection of automated tasks.
 
 > **Disclaimer**: Some of the scripts are small and may not be very useful such as [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) and [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
 
-> You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expense.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
+> You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expenses.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
 > I created some of the scripts with the intention that they're a foundation for more complex automated scripts such as. expenses, income, selenium-testing and a few more. The files that are these types of scripts will have (X).
 
