@@ -43,7 +43,7 @@ with smtplib.SMTP('smtp.gmail.com', PORT) as send__mail:
         img_type = imghdr.what(image_attachment.name)
     message.add_attachment(img, maintype='image', subtype=img_type)
     """
-    
+
     send__mail.send_message(message)
 
     print("Email sent!")
