@@ -23,11 +23,12 @@ pip install -r requirements.txt
 Now you can run every script.
 
 - [DL-file](https://github.com/endormi/automation/blob/master/dl-file/dl.py) - X - File downloader.
-- [Expenses](https://github.com/endormi/automation/blob/master/expenses/expenses.py) - X - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
-- [Graph](https://github.com/endormi/automation/blob/master/graph/excel.py) - X - Excel graph.
+- Excel scripts:
+  - [Expenses](https://github.com/endormi/automation/blob/master/excel/expenses.py) - X - Adds business and personal expenses to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the expenses manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
+  - [Graph](https://github.com/endormi/automation/blob/master/excel/graphs.py) - X - Excel graph.
+  - [Income](https://github.com/endormi/automation/blob/master/excel/income.py) - X - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Hue-light](https://github.com/endormi/automation/blob/master/hue-light/control.py) - X - Control hue lights.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge and blame.
-- [Income](https://github.com/endormi/automation/blob/master/income/income.py) - X - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
