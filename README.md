@@ -2,7 +2,7 @@
 
 Collection of automated tasks.
 
-> **Disclaimer**: Some of the scripts are small and may not be very useful such as [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) and [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
+> **Disclaimer**: Some of the scripts are small and may not be very useful for example [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py), but are still pretty cool :).
 
 > You might be wondering why I decided to keep [Expenses](https://github.com/endormi/automation/blob/master/expenses/expenses.py) and [Income](https://github.com/endormi/automation/blob/master/income/income.py) separate, it's just my personal preference.
 
@@ -30,7 +30,6 @@ Now you can run every script.
 - [Income](https://github.com/endormi/automation/blob/master/income/income.py) - X - Adds income to Excel (Currently has only one `.py` file, but I will be adding more later. Current code needs you to add the income manually, but will automatically add them to Excel. Not ideal I know, I'll be adding a better code when I have time). This is only a foundation for your excel files, which you can then update to your own liking.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
 - [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
-- [Open-essentials](https://github.com/endormi/automation/blob/master/open-essentials/essentials.py) - X - Open all of the essentials for development such as websites. tools and editor.
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository (uses selenium, but you can easliy also use the GitHub package).
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).
