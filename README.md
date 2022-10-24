@@ -33,10 +33,10 @@ Now you can run every script.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository (uses selenium, but you can easily also use the GitHub package).
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).
 - [Selenium testing](https://github.com/endormi/automation/tree/master/selenium-testing):
-  - [Cross browser](https://github.com/endormi/automation/blob/changes/selenium-testing/cross-browser.py) - X - Cross browser testing.
-  - [Login form](https://github.com/endormi/automation/blob/changes/selenium-testing/login-form.py) - X - Login form testing (tests GitHub, Stack Overflow and Twitter) and generates report.
-  - [Search](https://github.com/endormi/automation/blob/changes/selenium-testing/search.py) - X - Search function testing (searches `Python` in GitHub, Stack Overflow and Amazon) and generates report.
-  - [Sign up SO](https://github.com/endormi/automation/blob/changes/selenium-testing/sign-up-so.py) - X - Sign up testing (tests Stack Overflow, Gmail and GitHub) and generates report.
+  - [Cross browser](https://github.com/endormi/automation/blob/master/selenium-testing/cross-browser.py) - X - Cross browser testing.
+  - [Login form](https://github.com/endormi/automation/blob/master/selenium-testing/login-form.py) - X - Login form testing (tests GitHub, Stack Overflow and Twitter) and generates report.
+  - [Search](https://github.com/endormi/automation/blob/master/selenium-testing/search.py) - X - Search function testing (searches `Python` in GitHub, Stack Overflow and Amazon) and generates report.
+  - [Sign up SO](https://github.com/endormi/automation/blob/master/selenium-testing/sign-up-so.py) - X - Sign up testing (tests Stack Overflow, Gmail and GitHub) and generates report.
 - [Send-email](https://github.com/endormi/automation/blob/master/send-email/email.py) - Send emails (subject, content and image attachments).
 - [Tweeter](https://github.com/endormi/automation/blob/master/tweeter) - Write and post tweets.
 - [Whatsapp](https://github.com/endormi/automation/blob/master/whatsapp/msg.py) - Send Whatsapp message (I'm thinking of switching from Whatsapp, but thought this still should be added).
