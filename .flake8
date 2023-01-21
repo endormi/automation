@@ -1,5 +1,4 @@
 [flake8]
 ignore:
   	E501,
-  	E121,
 		F821
