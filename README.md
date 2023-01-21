@@ -9,7 +9,7 @@ Collection of automated tasks.
 Clone repository:
 
 ```
-git clone https://github.com/endormi/automation.git
+git clone https://github.com/endormi/automation.git && cd automation
 ```
 
 Install requirements:
