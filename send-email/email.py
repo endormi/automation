@@ -9,7 +9,7 @@ subject, content and image attachments
 
 import smtplib
 from email.message import EmailMessage
-import imghdr
+# import imghdr
 
 
 PORT = 587
