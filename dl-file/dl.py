@@ -18,10 +18,10 @@ https://selenium.dev/downloads/
 
 options = Options()
 options.add_experimental_option('prefs', {
-  "download.default_directory": r'directory/you/choose',
-  "download.prompt_for_download": False,
-  "download.directory_upgrade": True,
-  "safebrowsing.enabled": True
+    "download.default_directory": r'directory/you/choose',
+    "download.prompt_for_download": False,
+    "download.directory_upgrade": True,
+    "safebrowsing.enabled": True
 })
 
 browser = webdriver.Chrome(options=options, executable_path=r'file/to/driver/if/needed/otherwise/remove/r')
