@@ -28,7 +28,9 @@ Now you can run every script.
 - [Hue-light](https://github.com/endormi/automation/blob/master/hue-light/control.py) - X - Control hue lights.
 - [Git-commands](https://github.com/endormi/automation/blob/master/git-commands/commands.py) - Automates the process of using commands such as clone, commit, branch, pull, merge and blame.
 - [Monitor-website](https://github.com/endormi/automation/blob/master/monitor-website/web.py) - If website isn't up-and-running, sends an email and plays a sound.
-- [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
+- [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor):
+  - [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
+  - [Piano tiles](https://github.com/endormi/automation/blob/master/move-cursor/piano_tiles_bot.py) - Magic piano tiles game script by [adhirajpandey](https://github.com/adhirajpandey).
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository (uses selenium, but you can easily also use the GitHub package).
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).

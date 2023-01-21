@@ -1,4 +1,5 @@
 html-testRunner>=1.2.1
+keyboard>=0.13.5
 matplotlib>=3.1.1
 numpy>=1.16.4
 opencv-python>=4.2.0.34
@@ -7,6 +8,7 @@ phue>=1.1
 playsound>=1.2.2
 PyAutoGUI>=0.9.47
 pyfiglet>=0.8.post1
+pywin32>=305
 requests>=2.22.0
 schedule>=0.6.0
 selenium>=3.141.0
@@ -14,5 +16,3 @@ termcolor>=1.1.0
 tweepy>=4.6.0
 XlsxWriter>=1.2.7
 youtube-dl>=2020.6.16.1
-pywin32==305
-keyboard==0.13.5
