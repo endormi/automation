@@ -1,6 +1,6 @@
 import praw
 
-#Primary Account Details
+# Primary Account Details
 client_id = ""
 client_secret = ""
 user_agent = ""

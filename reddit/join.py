@@ -1,6 +1,6 @@
 import praw
 
-#Secondary Account Details
+# Secondary Account Details
 client_id = ""
 client_secret = ""
 user_agent = ""
@@ -30,6 +30,6 @@ with open("joinedlogs.txt", "w") as f:
             print("Joined " + sub)
         except Exception as e:
             f.write("Failed to join " + sub + "\n")
-            print("Failed to join " + sub)
+            print("Failed to join " + sub + "due to the error :" + e)
 
 print("Done")
