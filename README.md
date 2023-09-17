@@ -32,6 +32,9 @@ Now you can run every script.
   - [Move-cursor](https://github.com/endormi/automation/blob/master/move-cursor/cursor.py) - Move cursor every 10 seconds.
   - [Piano tiles](https://github.com/endormi/automation/blob/master/move-cursor/piano_tiles_bot.py) - Magic piano tiles game script by [adhirajpandey](https://github.com/adhirajpandey).
 - [Organize-files](https://github.com/endormi/automation/blob/master/organize-files/organizer.py) - Organizes files (images, audio, texts, videos and compressed files) and moves them inside specified folders.
+- [Reddit](https://github.com/endormi/automation/blob/master/reddit) - Allows you to efficiently transfer joined subreddits from one account to another reddit account:
+  - [Extract](https://github.com/endormi/automation/blob/master/reddit/extract.py) by [adhirajpandey](https://github.com/adhirajpandey).
+  - [Join](https://github.com/endormi/automation/blob/master/reddit/join.py) by [adhirajpandey](https://github.com/adhirajpandey).
 - [Repo](https://github.com/endormi/automation/tree/master/repo) - Creates a private or public GitHub repository (uses selenium, but you can easily also use the GitHub package).
 - [Scheduler](https://github.com/endormi/automation/tree/master/scheduler/scheduler.py) - X - Scheduled jobs (open email, shutdown computer etc.).
 - [Selenium testing](https://github.com/endormi/automation/tree/master/selenium-testing):

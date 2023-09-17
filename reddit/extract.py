@@ -18,7 +18,6 @@ reddit = praw.Reddit(
 subslist = []
 
 for subreddit in reddit.user.subreddits(limit=None):
-    # print(str(subreddit))
     subslist.append(str(subreddit))
 
 with open("subs.txt", "w") as f:

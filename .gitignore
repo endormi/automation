@@ -27,5 +27,5 @@ file.txt
 # To ignore downloaded YouTube audio:
 *.mp3
 
-# To ignore sample subreddits file
-samplesubs.txt
+# To ignore subreddits file
+subs.txt
