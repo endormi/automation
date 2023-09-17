@@ -12,7 +12,7 @@ It can also help if you want to get a list of subscribed subreddits or if you to
 
 3. Add your obtained credentials at starting of `extract.py` and `join.py` files.
 
-4. Now run the `extract.py` file to fetch all the subscribed subreddits into `subs.txt` file.
+4. Now run the `extract.py` file to fetch all the subscribed subreddits into `subs.txt` file. Sample file : `samplesubs.txt`
 
 5. Use `join.py` to subscribe to all the subreddits in `subs.txt` file.
 
