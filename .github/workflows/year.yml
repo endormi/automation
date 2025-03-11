@@ -15,17 +15,5 @@ jobs:
         uses: endormi/yearplusplus@v1
         with:
           files: 'LICENSE'
-
-      - name: Setup Git configuration
-        run: |
-          git config user.name "Year++"
-          git config user.email "<>"
-
-      - name: Commit changes
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -am "Update copyright year"
-            git push origin ${{ github.head_ref }}
-          else
-            echo "No changes to commit."
-          fi
+          username: 'Year++'
+          email: '<>'
